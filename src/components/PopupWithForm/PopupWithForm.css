@@ -1,0 +1,112 @@
+.register {
+  font-family: 'Roboto', 'Inter', Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register__form {
+  min-width: 430px;
+  min-height: 380px;
+  background-color: #fff;
+  border-radius: 16px;
+  margin: 195px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.register__form-label {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #2F71E5;
+  font-size: 12px;
+  line-height: 14px;
+  align-self: start;
+  margin: 0 0 8px 36px;
+}
+
+.register__header {
+  color: #000;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  margin: 34px 0 22px 36px;
+  align-self: start;
+}
+
+.register__input {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  color: #000;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  /* margin-bottom: 16px; */
+  outline: none;
+  min-width: 358px;
+  min-height: 27.26px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.register__form-error {
+  font-size: 12px;
+  line-height: 15px;
+  color: red;
+  display: block;
+  align-self: start;
+  margin: 4px 0 0 36px;
+  text-align: start;
+  box-sizing: border-box;
+  height: 12px;
+}
+
+.register__input::placeholder {
+  opacity: .2;
+}
+
+.register__button {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  width: 358px;
+  height: 64px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  background-color: #2F71E5;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  border: 0;
+  border-radius: 100px;
+}
+
+.register__button_disable {
+  background-color: #E6E8EB;
+  color: #B6BCBF;
+}
+
+.register__signin {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.register__login-text {
+  margin: 0 12px 0 0;
+}
+
+.register__login-link {
+  color: #2F71E5;
+  text-decoration: none;
+}
