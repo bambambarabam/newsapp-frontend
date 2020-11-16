@@ -24,7 +24,7 @@
   font-size: 12px;
   line-height: 14px;
   align-self: start;
-  margin: 0 0 8px 36px;
+  margin: 13px 0 8px 36px;
 }
 
 .register__header {
@@ -38,13 +38,11 @@
 
 .register__input {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-weight: 400;
   background-color: #fff;
   color: #000;
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #ccc;
-  /* margin-bottom: 16px; */
   outline: none;
   min-width: 358px;
   min-height: 27.26px;
@@ -103,7 +101,7 @@
 }
 
 .register__login-text {
-  margin: 0 12px 0 0;
+  margin: 0 5px 0 0;
 }
 
 .register__login-link {
