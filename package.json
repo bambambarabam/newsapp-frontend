@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "frontend for newsapp project",
   "author": "Slava Lebedintsev",
-  "homepage": "https://bambambarabam.github.io/newsapp/",
+  "homepage": "https://bambambarabam.github.io/newsapp-frontend/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",

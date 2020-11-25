@@ -1,60 +1,52 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Button from '../Button/Button';
 import './PopupWithForm.css';
 
-function PopupWithForm(props) {
+function PopupWithForm({
+  isOpen,
+  onSubmit,
+  onClose,
+  formName,
+  onChangeForm,
+  children,
+  disabled
+}) {
+
   return (
-    <>
-      <section className='register'>
-        <form className='register__form'>
-          <h2 className='register__header'>Вход</h2>
-          <label
-            className='register__form-label'
-            htmlFor='email'>
-            Email
-          </label>
-          <input
-            className='register__input'
-            id='email'
-            type='email'
-            placeholder='Введите почту'
-            required>
-          </input>
-          <span className='register__form-error'
-          id='email-error'>
-            Неправильный формат email
-          </span>
-          <label
-            className='register__form-label'
-            htmlFor='password'>
-            Пароль
-          </label>
-          <input
-            className='register__input'
-            type='password'
-            id='password'
-            placeholder='Введите пароль'
-            required>
-          </input>
-          <span className='register__form-error'
-          id='password-error'></span>
-          <button
-            className='register__button'
-            type='submit'>
-            Войти
-          </button>
-          <div className='register__signin'>
-            <p className='register__login-text'>
-              или
-            </p>
-            <a href='/signin'
-              className='register__login-link'>
-              Зарегистрироваться
-              </a>
-          </div>
-        </form>
-      </section>
-    </>
+    <div className={`popup popup_type_${formName} ${isOpen && 'popup_opened'}`}>
+      <div
+        className='popup__overlay'
+        onClick={onClose}>
+      </div>
+      <form
+        className={`popup__form ${formName}__form`}
+        name={formName}
+        onSubmit={onSubmit}>
+        <button
+          type='reset'
+          className='popup__close-button'
+          onClick={onClose} />
+        <fieldset
+          className='popup__input-container'
+          disabled={disabled}>
+          {children}
+        </fieldset>
+        {formName !== 'tooltip' &&
+          <>
+            <span className='popup__error'>Такой пользователь уже есть</span>
+            <Button
+              buttonClassName='popup__submit'
+              onClick={onSubmit}
+              disabled={disabled}>
+             Войти
+            </Button>
+          </>
+        }
+        <span className='popup__subtitle'>{formName !== 'tooltip' && 'или '}
+          <span className='popup__link' onClick={onChangeForm}>
+            {formName !== 'login' ? 'Войти' : 'Зарегистрироваться'}</span></span>
+      </form>
+    </div >
   );
 }
 

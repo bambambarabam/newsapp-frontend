@@ -1,0 +1,6 @@
+.link {
+  text-decoration: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all .7s ease
+}

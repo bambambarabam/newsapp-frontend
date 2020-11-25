@@ -1,0 +1,30 @@
+.bookmark-button-icon {
+  margin: auto;
+  outline: 0;
+  transition: all .3s ease;
+}
+
+.bookmark-button-icon_saved {
+  fill: #2f71e5;
+}
+
+button:hover .bookmark-button-icon_saved {
+  fill: #347eff;
+}
+
+.bookmark-button-icon_bookmark {
+  stroke: #b6bcbf;
+}
+
+button:hover .bookmark-button-icon_bookmark {
+  stroke: #1a1b22;
+}
+
+.bookmark-button-icon_del {
+  fill: #f5f6f7;
+}
+
+button:hover .bookmark-button-icon_del {
+  fill: #1a1b22;
+  outline: 0;
+}
