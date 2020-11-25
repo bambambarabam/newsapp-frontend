@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Link.css';
 
-export default function Link({ linkClassName, activeLinkClassName, path, children }) {
+function Link({ linkClassName, activeLinkClassName, path, children }) {
   return (
     <NavLink
       className={`link ${linkClassName}`}
@@ -10,3 +10,5 @@ export default function Link({ linkClassName, activeLinkClassName, path, childre
       exact to={path}>{children}</NavLink>
   )
 }
+
+export default Link;

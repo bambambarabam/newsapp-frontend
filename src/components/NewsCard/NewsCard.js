@@ -6,8 +6,7 @@ import CardImg from '../../images/image_08.jpg'
 function NewsCard(props) {
   return (
     <li className='card'>
-      < span className='card__element card__keyword'>keyword</span>
-
+      <span className='card__element card__keyword'>keyword</span>
       <button
         type='button'
         className='card__element card__button'>

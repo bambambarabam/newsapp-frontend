@@ -48,7 +48,7 @@ function App() {
   }, []);
 
   return (
-    <div className='page'>
+    <div className='app'>
       <Header
         onClick={handleLoginPopupOpen}
       />

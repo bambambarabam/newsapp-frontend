@@ -58,7 +58,7 @@
   background-color: #fff;
 }
 
-.search__input-field:focus + .search__input-error {
+.search__input-field:focus+.search__input-error {
   display: none;
 }
 
@@ -71,54 +71,48 @@
 }
 
 .search__button:hover {
-  background-color:#347eff;
+  background-color: #347eff;
 }
 
 .search__button:active {
   background-color: #2a65cc;
 }
-/*
+
 @media screen and (max-width: 768px) {
   .search {
     max-width: 448px;
     height: 334px;
     padding: 38px 0 48px;
   }
-
   .search__heading {
     font-size: 36px;
     line-height: 40px;
     margin: 0 0 16px 0;
   }
-
   .search__form {
     height: 56px;
   }
-
   .search__button {
     width: 160px;
   }
-} */
-/*
+}
+
 @media screen and (max-width: 680px) {
   .search {
     width: 90%;
     height: 480px;
     padding: 30px 0 32px;
   }
-
   .search__form {
     flex-wrap: wrap;
     height: 128px;
     background-color: transparent;
   }
-
   .search__input-field {
     padding: 0 16px;
   }
-
   .search__button {
     width: 100%;
     margin-top: 16px;
   }
-} */
+}
