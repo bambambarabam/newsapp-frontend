@@ -1,6 +1,8 @@
 {
   "name": "newsapp-frontend",
   "version": "0.1.0",
+  "description": "frontend for newsapp project",
+  "author": "Slava Lebedintsev",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
@@ -8,11 +10,15 @@
     "@testing-library/user-event": "^12.2.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "depoy-vm": "npm run build && scp -r ./build/* carved@130.193.50.91:/home/carved/newsapp-frontend",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -34,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "homepage": "."
 }
