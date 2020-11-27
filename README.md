@@ -17,7 +17,7 @@
 * Визуализация загрузки данных.
 * Подключение API.
 * Create React App.
-* CurrentUserContex.
+* CurrentUserContext.
 * Ref.
 
 Cпасибо за внимание!
