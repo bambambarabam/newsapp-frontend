@@ -9,6 +9,9 @@ function PopupWithForm({
   formName,
   onChangeForm,
   children,
+  submitButtonText,
+  isFormValid,
+  authError,
   disabled
 }) {
 
@@ -33,12 +36,12 @@ function PopupWithForm({
         </fieldset>
         {formName !== 'tooltip' &&
           <>
-            <span className='popup__error'>Такой пользователь уже есть</span>
+            <span className='popup__error'>{authError}</span>
             <Button
               buttonClassName='popup__submit'
               onClick={onSubmit}
               disabled={disabled}>
-             Войти
+              {submitButtonText}
             </Button>
           </>
         }

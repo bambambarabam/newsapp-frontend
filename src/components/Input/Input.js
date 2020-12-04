@@ -17,7 +17,8 @@ function Input(props) {
     placeholder,
     disabled,
     isValid,
-    errorMessage
+    errorMessage,
+    onChange
   } = props;
 
   return (
@@ -29,6 +30,7 @@ function Input(props) {
         maxLength={maxLength}
         required={required}
         id={`${name}_${formName}`}
+        onChange={onChange}
         className={`input__field ${inputFieldClassName}`}
         placeholder={placeholder}
         disabled={disabled}>

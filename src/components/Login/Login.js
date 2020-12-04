@@ -1,10 +1,25 @@
 import React from 'react';
 import Input from '../Input/Input';
 import PopupWithForm from '../PopupWithForm/PopupWithForm';
+import { useFormWithValidation } from '../../utils/useFormWithValidation';
 
-function Login({ isOpen, onClose, disabled, onChangeForm }) {
+function Login({ isOpen, onClose, disabled, onChangeForm, onLogin, authError }) {
+
+  const emailField = useFormWithValidation();
+  const passwordField = useFormWithValidation();
+
+  function handleLogin(evt) {
+    evt.preventDefault();
+    onLogin(emailField.value, passwordField.value);
+  };
 
   function handleClose() {
+    emailField.setErrorMessage('');
+    emailField.setValue('');
+    passwordField.setErrorMessage('');
+    passwordField.setValue('');
+    emailField.setIsValid(false);
+    passwordField.setIsValid(false);
     onClose();
   };
 
@@ -14,6 +29,8 @@ function Login({ isOpen, onClose, disabled, onChangeForm }) {
       isOpen={isOpen}
       onClose={handleClose}
       onChangeForm={onChangeForm}
+      isFormValid={emailField.isValid && passwordField.isValid}
+      onSubmit={handleLogin}
       disabled={disabled}
       submitButtonText='Войти'>
       <legend className='popup__heading'>Вход</legend>
@@ -26,6 +43,7 @@ function Login({ isOpen, onClose, disabled, onChangeForm }) {
         maxLength='30'
         required={true}
         autoComplete='email'
+        {...emailField}
         inputLabelClassName='popup__input-label'
         inputFieldClassName='popup__input'
         placeholder='Введите почту' />
@@ -38,6 +56,7 @@ function Login({ isOpen, onClose, disabled, onChangeForm }) {
         maxLength='30'
         required={true}
         autoComplete='password'
+        {...passwordField}
         inputLabelClassName='popup__input-label'
         inputFieldClassName='popup__input'
         placeholder='Введите пароль' />
