@@ -40,7 +40,7 @@ function PopupWithForm({
             <Button
               buttonClassName='popup__submit'
               onClick={onSubmit}
-              disabled={disabled}>
+              disabled={!isFormValid}>
               {submitButtonText}
             </Button>
           </>

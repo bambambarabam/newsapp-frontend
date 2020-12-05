@@ -8,7 +8,8 @@ function Register({
   onClose,
   disabled,
   onChangeForm,
-  onRegister
+  onRegister,
+  authError
 }) {
 
   const emailField = useFormWithValidation();
@@ -32,7 +33,9 @@ function Register({
       onClose={handleClose}
       onChangeForm={onChangeForm}
       onSubmit={handleRegister}
+      isFormValid={emailField.isValid && passwordField.isValid && nameField.isValid}
       disabled={disabled}
+      authError={authError}
       submitButtonText='Зарегистрироваться'>
       <legend className='popup__heading'>Регистрация</legend>
       <Input label='Email'
