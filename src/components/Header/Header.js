@@ -5,7 +5,7 @@ import Logo from '../Logo/Logo';
 import Menu from '../Menu/Menu';
 import { useLocation } from 'react-router-dom';
 
-function Header({ onClick }) {
+function Header({ isLoggedIn, onClick, onSignOut }) {
   const [isMenuOpened, setMenuOpened] = useState(false);
 
   const { pathname } = useLocation();
@@ -26,6 +26,8 @@ function Header({ onClick }) {
         pathname={pathname} />
       <Navigation
         navigationClassName={navigationClassName}
+        isLoggedIn={isLoggedIn}
+        onSignOut={onSignOut}
         pathname={pathname}
         onClick={onClick}
         isMenuOpened={isMenuOpened}

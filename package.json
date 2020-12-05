@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.2",
     "@testing-library/user-event": "^12.2.2",
+    "escape-html": "^1.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -18,7 +19,7 @@
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "depoy-vm": "npm run build && scp -r ./build/* carved@130.193.50.91:/home/carved/newsapp-frontend",
+    "depoy-vm": "npm run build && scp -r ./build/* carved@178.154.226.31:/home/carved/newsapp-frontend",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
