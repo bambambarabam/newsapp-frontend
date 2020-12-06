@@ -1,6 +1,6 @@
 ## Проект: NewsExplorer на React
 
-[NewsExplorer](https://newsapp.me/)
+[newsapp.me](https://newsapp.me/)
 
 ### `Обзор`
 
@@ -19,5 +19,8 @@
 * Визуализация загрузки данных (Компонент Preloader).
 * Хранение JWT-токена пользователя в localStorage.
 * Используется HOC-компонент ProtectedRoute.
+* Бэкенд и фронтенд находятся на одном сервере.
+* Используется SSL-сертификат.
+* Nginx.
 
 Cпасибо за внимание!
