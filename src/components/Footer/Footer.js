@@ -8,7 +8,7 @@ function Footer(props) {
   return (
     <footer className='footer'>
       <p className='footer__credits'>
-        &copy; 2020 Supersite, Powered by News API
+        &copy; 2021 Newsapp, Powered by News API
       </p>
       <ul className='footer__list'>
         <li>

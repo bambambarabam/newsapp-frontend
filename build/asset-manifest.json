@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.1a3f8106.chunk.css",
-    "main.js": "./static/js/main.f65d57b2.chunk.js",
-    "main.js.map": "./static/js/main.f65d57b2.chunk.js.map",
+    "main.css": "./static/css/main.184f2b04.chunk.css",
+    "main.js": "./static/js/main.c7b87e5e.chunk.js",
+    "main.js.map": "./static/js/main.c7b87e5e.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.ec2b6fe6.js",
     "runtime-main.js.map": "./static/js/runtime-main.ec2b6fe6.js.map",
     "static/js/2.0790ee64.chunk.js": "./static/js/2.0790ee64.chunk.js",
     "static/js/2.0790ee64.chunk.js.map": "./static/js/2.0790ee64.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.1a3f8106.chunk.css.map": "./static/css/main.1a3f8106.chunk.css.map",
+    "static/css/main.184f2b04.chunk.css.map": "./static/css/main.184f2b04.chunk.css.map",
     "static/js/2.0790ee64.chunk.js.LICENSE.txt": "./static/js/2.0790ee64.chunk.js.LICENSE.txt",
     "static/media/index.css": "./static/media/SourceSansPro-Regular.efa76f83.ttf",
     "static/media/Main.css": "./static/media/not-found.8fabc218.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.ec2b6fe6.js",
     "static/js/2.0790ee64.chunk.js",
-    "static/css/main.1a3f8106.chunk.css",
-    "static/js/main.f65d57b2.chunk.js"
+    "static/css/main.184f2b04.chunk.css",
+    "static/js/main.c7b87e5e.chunk.js"
   ]
 }
