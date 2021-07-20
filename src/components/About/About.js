@@ -1,4 +1,6 @@
 import React from 'react';
+import faceIcon from '../../images/portrait.jpeg';
+
 import './About.css';
 
 function About(props) {
@@ -6,7 +8,7 @@ function About(props) {
     <section className='about'>
       <img
         className='about__image'
-        src='https://hhcdn.ru/photo/482767244.jpeg?t=1612717397&h=KaV4bhdE6HZjhRztZIn06A'
+        src={faceIcon}
         alt='Аватар автора.'
       />
       <div className='about__container'>
