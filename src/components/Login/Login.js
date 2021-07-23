@@ -32,6 +32,7 @@ function Login({ isOpen, onClose, disabled, onChangeForm, onLogin, authError }) 
       isFormValid={emailField.isValid && passwordField.isValid}
       onSubmit={handleLogin}
       disabled={disabled}
+      authError={authError}
       submitButtonText='Войти'>
       <legend className='popup__heading'>Вход</legend>
       <Input

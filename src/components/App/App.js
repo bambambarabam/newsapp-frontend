@@ -121,6 +121,7 @@ function App() {
   };
 
   function handleTogglePopup() {
+    setAuthError('');
     setLoginOpen(!isLoginOpen);
     setRegisterOpen(!isRegisterOpen);
   };
@@ -167,12 +168,12 @@ function App() {
       .then((res) => {
         mainApi.getUserInfo(res)
           .then((data) => setCurrentUser(data))
-          .catch((err) => setAuthError(err.message));
+          .catch((err) => setAuthError(err.message))
         setLoggedIn(true);
         setLoginOpen(false);
         getSavedNews();
       })
-      .catch((err) => setAuthError(err.message))
+      .catch((err) => setAuthError(err.message.message))
       .finally(() => setDisabled(false));
   };
 

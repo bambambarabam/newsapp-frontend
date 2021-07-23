@@ -15,7 +15,7 @@ export const register = (email, password, name) => fetch(`${BASE_URL}/signup`, {
       return res.json()
         .then((err) => {
           if (err.error) {
-            throw new BadRequestError(err.error);
+            throw new BadRequestError(err.message);
           } else {
             throw new BadRequestError(err.message);
           }
